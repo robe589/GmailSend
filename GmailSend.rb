@@ -18,6 +18,10 @@ class GmailSend
 		@mail.from address
 	end
 
+	def setHtmlPart(html)
+		@mail.html_part=html
+	end
+
 	def sendMail(sendAddress,subject,body)
 		@mail.to=sendAddress
 		@mail.subject=subject
